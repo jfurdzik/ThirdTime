@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStopwatch } from 'react-timer-hook';
 import styles from './MyStopwatch.module.css';
+import reset_icon from "../../assets/reset.png";
 
 export default function MyStopwatch() {
   const {
@@ -21,12 +22,12 @@ export default function MyStopwatch() {
   };
 
   return (
-    <div style={{textAlign: 'center'}}>
+    <div className={styles.component}>
       <div className={styles.time}>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
-      <button onClick={isRunning ? pause : start}>{isRunning ? 'Pause' : 'Start'}</button>
-      <button onClick={() => reset(new Date(0), false)}>Reset</button>
+      <div className={styles.start_pause_container}><button onClick={isRunning ? pause : start} className={styles.pause_start}>{isRunning ? 'Pause' : 'Start'}</button></div>
+      <button onClick={() => reset(new Date(0), false)} className={styles.reset_button}><img src={reset_icon} className={styles.reset_img}/></button>
     </div>
   );
 }

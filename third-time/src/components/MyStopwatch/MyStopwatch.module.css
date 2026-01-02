@@ -9,3 +9,47 @@
     justify-content: center;
     border-radius: 20px;
 }
+
+.time > span {
+    font-family: "Roboto", sans-serif !important;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.reset_img {
+    height: 35px;
+    width: 35px;
+}
+
+.reset_button {
+    background-color: transparent;
+}
+
+.pause_start {
+    background-color: #8FBEFF;
+    border-radius: 10px;
+    color: black;
+    filter: drop-shadow(5px 5px 10px #333333);
+    width: 15vw;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.pause_start:hover {
+    background-color: #8FBEFFAA;
+}
+
+.start_pause_container {
+    opacity: 0.5;
+    font-family: "Anonymous Pro", monospace;
+}
+
+button:focus {
+  outline: none;
+}
