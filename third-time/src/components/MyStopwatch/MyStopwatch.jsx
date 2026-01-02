@@ -25,9 +25,7 @@ export default function MyStopwatch() {
       <div className={styles.time}>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
-      {/* <p>{isRunning ? 'Running' : 'Not running'}</p> */}
-      <button onClick={start}>Start</button>
-      <button onClick={pause}>Pause</button>
+      <button onClick={isRunning ? pause : start}>{isRunning ? 'Pause' : 'Start'}</button>
       <button onClick={() => reset(new Date(0), false)}>Reset</button>
     </div>
   );
