@@ -1,0 +1,38 @@
+.sessionToggle {
+  background: #8FBEFF80;
+  border-radius: 10px !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  width: 33vw;
+}
+
+.sessionButton,
+.sessionButtonActive {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.sessionButtonActive {
+  background: #0451BD80 !important;
+  color: black !important;
+}
+
+.sessionButton {
+    color: white;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { useStopwatch } from 'react-timer-hook';
 import styles from './MyStopwatch.module.css';
 import reset_icon from "../../assets/reset.png";
+import Toggle from "../Toggle/Toggle";
 
 export default function MyStopwatch() {
   const {
@@ -23,6 +24,7 @@ export default function MyStopwatch() {
 
   return (
     <div className={styles.component}>
+      <Toggle/>
       <div className={styles.time}>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
