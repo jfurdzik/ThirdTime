@@ -1,0 +1,8 @@
+.component {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #8FBEFF, #8E1FD8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

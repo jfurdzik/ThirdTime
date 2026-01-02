@@ -1,0 +1,11 @@
+.time {
+    font-size: 100px;
+    background-color: #8FBEFF80;
+    color: black;
+    height: 40vh;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}

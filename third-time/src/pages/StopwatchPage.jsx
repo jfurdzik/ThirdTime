@@ -1,8 +1,11 @@
 import React from 'react';
-import MyStopwatch from '../components/MyStopwatch';
+import MyStopwatch from '../components/MyStopwatch/MyStopwatch';
+import styles from './StopwatchPage.module.css';
 
 export default function StopwatchPage() {
   return (
-    <MyStopwatch/>
+    <div className={styles.component}>
+      <MyStopwatch/>
+    </div>
   );
 }
