@@ -17,14 +17,14 @@ export default function Toggle({ onDataSend }) {
   return (
     <div className={styles.sessionToggle}>
       <button
-        className={session === "work" ? styles.sessionButtonActive : styles.sessionButton}
+        className={session === "work" ? styles.sessionButtonActiveWork : styles.sessionButtonWork}
         onClick={clickToggleToWork}
         disabled={session === "work"}
       >
         Work
       </button>
       <button
-        className={session === "break" ? styles.sessionButtonActive : styles.sessionButton}
+        className={session === "break" ? styles.sessionButtonActiveBreak : styles.sessionButtonBreak}
         onClick={clickToggleToBreak}
         disabled={session === "break"}
       >

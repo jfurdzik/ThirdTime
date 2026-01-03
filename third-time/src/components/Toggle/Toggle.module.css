@@ -1,5 +1,4 @@
 .sessionToggle {
-  background: #8FBEFF80;
   border-radius: 10px !important;
   display: flex;
   align-items: center;
@@ -8,8 +7,10 @@
   width: 33vw;
 }
 
-.sessionButton,
-.sessionButtonActive {
+.sessionButtonWork,
+.sessionButtonActiveWork,
+.sessionButtonActiveBreak,
+.sessionButtonBreak {
   width: 50%;
   padding: 10px;
   font-size: 16px;
@@ -28,11 +29,22 @@
   font-size: 30px;
 }
 
-.sessionButtonActive {
-  background: #0451BD80 !important;
-  color: black !important;
+.sessionButtonActiveWork {
+    background: #0451BD80 !important;
+    color: black !important;
 }
 
-.sessionButton {
+.sessionButtonBreak {
+    background: #8FBEFF80;
+    color: white;
+}
+
+.sessionButtonActiveBreak {
+    background: #8E1FD880 !important;
+    color: black !important;
+}
+
+.sessionButtonWork {
+    background: #D89EFF80;
     color: white;
 }
