@@ -5,4 +5,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.settings {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
