@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
 import styles from './Toggle.module.css';
 
-export default function Toggle() {
+export default function Toggle({ onDataSend }) {
   const [session, setSession] = useState("work");
+
+  function clickToggleToWork() {
+    setSession("work");
+    onDataSend("work"); //call parent callback func with data to send up
+  }
+
+  function clickToggleToBreak() {
+    setSession("break");
+    onDataSend("break"); //call parent callback func with data to send up
+  }
 
   return (
     <div className={styles.sessionToggle}>
       <button
         className={session === "work" ? styles.sessionButtonActive : styles.sessionButton}
-        onClick={() => setSession("work")}
+        onClick={clickToggleToWork}
         disabled={session === "work"}
       >
         Work
       </button>
       <button
         className={session === "break" ? styles.sessionButtonActive : styles.sessionButton}
-        onClick={() => setSession("break")}
+        onClick={clickToggleToBreak}
         disabled={session === "break"}
       >
         Break

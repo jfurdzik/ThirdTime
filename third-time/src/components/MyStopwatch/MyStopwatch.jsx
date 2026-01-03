@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useStopwatch } from 'react-timer-hook';
 import styles from './MyStopwatch.module.css';
 import reset_icon from "../../assets/reset.png";
@@ -22,9 +22,16 @@ export default function MyStopwatch() {
     return String(time).padStart(2, '0');
   };
 
+  const [toggleState, setToggleState] = useState('');
+
+  const handleToggleData = (data) => {
+    setToggleState(data);
+    console.log("state received from toggle: ", data);
+  }
+
   return (
     <div className={styles.component}>
-      <Toggle/>
+      <Toggle onDataSend={handleToggleData}/>
       <div className={styles.time}>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
