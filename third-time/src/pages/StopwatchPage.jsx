@@ -1,5 +1,5 @@
 import React from 'react';
-import MyStopwatch from '../components/MyStopwatch/MyStopwatch';
+import MyStopwatchAndTimer from '../components/MyStopwatchAndTimer/MyStopwatchAndTimer';
 import styles from './StopwatchPage.module.css';
 import logo from '../assets/logo.png';
 import settings from '../assets/settings.png';
@@ -11,7 +11,7 @@ export default function StopwatchPage() {
       <button className={styles.settings}>
         <img src={settings}/>
       </button>
-      <MyStopwatch/>
+      <MyStopwatchAndTimer/>
     </div>
   );
 }
