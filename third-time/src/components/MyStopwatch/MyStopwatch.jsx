@@ -32,10 +32,10 @@ export default function MyStopwatch() {
   return (
     <div className={styles.component}>
       <Toggle onDataSend={handleToggleData}/>
-      <div className={styles.time}>
+      <div className={toggleState == "work" ? styles.timeBlue : styles.timePurple}>
         <span>{formatTime(minutes)}</span>:<span>{formatTime(seconds)}</span>
       </div>
-      <div className={styles.start_pause_container}><button onClick={isRunning ? pause : start} className={styles.pause_start}>{isRunning ? 'Pause' : 'Start'}</button></div>
+      <div className={styles.start_pause_container}><button onClick={isRunning ? pause : start} className={toggleState == "work" ? styles.pause_start_blue : styles.pause_start_purple}>{isRunning ? 'Pause' : 'Start'}</button></div>
       <button onClick={() => reset(new Date(0), false)} className={styles.reset_button}><img src={reset_icon} className={styles.reset_img}/></button>
     </div>
   );

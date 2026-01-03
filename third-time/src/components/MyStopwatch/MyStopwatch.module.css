@@ -1,4 +1,4 @@
-.time {
+.timeBlue {
     font-size: 100px;
     background-color: #8FBEFF80;
     color: black;
@@ -10,7 +10,23 @@
     border-radius: 20px;
 }
 
-.time > span {
+.timePurple {
+    font-size: 100px;
+    background-color: #D89EFF80;
+    color: black;
+    height: 33vh;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.timeBlue > span {
+    font-family: "Roboto", sans-serif !important;
+}
+
+.timePurple > span {
     font-family: "Roboto", sans-serif !important;
 }
 
@@ -30,7 +46,7 @@
     background-color: transparent;
 }
 
-.pause_start {
+.pause_start_blue {
     background-color: #8FBEFF;
     border-radius: 10px;
     color: black;
@@ -41,8 +57,23 @@
     padding: 10px;
 }
 
-.pause_start:hover {
+.pause_start_blue:hover {
     background-color: #8FBEFFAA;
+}
+
+.pause_start_purple {
+    background-color: #D89EFF;
+    border-radius: 10px;
+    color: black;
+    filter: drop-shadow(5px 5px 10px #333333);
+    width: 15vw;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.pause_start_purple:hover {
+    background-color: #D89EFFAA;
 }
 
 .start_pause_container {
